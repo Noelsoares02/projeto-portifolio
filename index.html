@@ -1,58 +1,566 @@
+```html
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio Noel soares</title>
+
+    <title>Portfólio | Noel Norberto</title>
+
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
-    <script src="https://kit.fontawesome.com/ba54e6a2ca.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+
+    <!-- Font Awesome -->
+    <script 
+        src="https://kit.fontawesome.com/ba54e6a2ca.js" 
+        crossorigin="anonymous">
+    </script>
 </head>
+
 <body>
+
+    <!-- MENU PRINCIPAL -->
     <header>
-        <nav id="menu">
+
+        <nav id="menu" aria-label="Menu principal">
+
             <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i></a> </li>
-                <li><a href="#"><i class="fa-solid fa-brain"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-graduation-cap"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-trowel-bricks"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-moon"></i></a></li>
+
+                <li>
+                    <a href="#ficha" aria-label="Início">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#skills" aria-label="Competências">
+                        <i class="fa-solid fa-brain"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#formacao" aria-label="Formação">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projetos" aria-label="Projetos">
+                        <i class="fa-solid fa-trowel-bricks"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" aria-label="Alterar tema">
+                        <i class="fa-solid fa-moon"></i>
+                    </a>
+                </li>
+
             </ul>
+
         </nav>
+
     </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
     <main>
+
+        <!-- APRESENTAÇÃO -->
         <section id="ficha">
-            <img src="imagens/noel soares.jpg" alt=" Noel soares" class="foto">
+
+            <img 
+                src="imagens/noel soares.jpg" 
+                alt="Foto de Noel Norberto"
+                class="foto"
+            >
+
             <h1>Noel Norberto</h1>
-            <p>Profissional formado em Ciência da Computação, com conhecimentos em Análise e Desenvolvimento de Sistemas, Inteligência Artificial e tecnologias digitais. Possui 30 anos de experiência no setor de hotelaria, com sólida atuação como Coordenador de Recepção e Reservas, destacando-se em atendimento ao cliente, liderança e gestão de equipes, controle de reservas e otimização de processos operacionais.</br>Experiência na integração entre **tecnologia e gestão hoteleira, contribuindo para a melhoria dos processos, organização das operações e qualidade no atendimento. Perfil profissional marcado por responsabilidade, capacidade de liderança, visão analítica e facilidade de adaptação a novas tecnologias.
-</p>
-    <div id="social">
-        <a href="https://github.com/Noelsoares02?tab=repositories" target="_blank" rel="nofollow"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/noel-soares-norberto" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://www.youtube.com/@noelsoares544" target="_blank" rel="nofollow"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://www.instagram.com/noelsoares1445" target="_blank" rel="nofollow"><i class="fa-brands fa-instagram"></i></a>
-        <a href="" target="_blank" rel="nofollow"><i class="fa-solid fa-globe"></i></a>
-    </div>
-        </section>
-        <section id="detalhes">
-            <h2>Deixe-me Apresentar</h2>
-            <div id="video-conteiner">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/mMMMUb3tcrI?si=K6q-t0FWa-7Ccubo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <p>
+                Profissional formado em <strong>Ciência da Computação</strong>,
+                com conhecimentos em <strong>Análise e Desenvolvimento de Sistemas,
+                Inteligência Artificial e tecnologias digitais</strong>.
+            </p>
+
+            <p>
+                Possui <strong>30 anos de experiência no setor de hotelaria</strong>,
+                com sólida atuação como Coordenador de Recepção e Reservas,
+                destacando-se em atendimento ao cliente, liderança e gestão de
+                equipes, controle de reservas e otimização de processos operacionais.
+            </p>
+
+            <p>
+                Experiência na integração entre
+                <strong>tecnologia e gestão hoteleira</strong>,
+                contribuindo para a melhoria dos processos, organização das
+                operações e qualidade no atendimento.
+            </p>
+
+            <p>
+                Perfil profissional marcado por responsabilidade,
+                capacidade de liderança, visão analítica e facilidade
+                de adaptação a novas tecnologias.
+            </p>
+
+
+            <!-- REDES SOCIAIS -->
+            <div id="social">
+
+                <a 
+                    href="https://github.com/Noelsoares02?tab=repositories"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                >
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a 
+                    href="https://www.linkedin.com/in/noel-soares-norberto"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                >
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a 
+                    href="https://www.youtube.com/@noelsoares544"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube"
+                >
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a 
+                    href="https://www.instagram.com/noelsoares1445"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                >
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a 
+                    href="#"
+                    aria-label="Meu site"
+                >
+                    <i class="fa-solid fa-globe"></i>
+                </a>
+
             </div>
-            <artigo id="video"><!--Fim article#video-->
-                
-            </artigo>
-            <artigo id="formacao"><!--Fim Article#formaçao-->
 
-            </artigo>
-            <artigo id="projetos"><!-- fim article#projetos-->
-
-            </artigo>
         </section>
+
+
+        <!-- DETALHES -->
+        <section id="detalhes">
+
+
+            <!-- VÍDEO DE APRESENTAÇÃO -->
+            <article id="video">
+
+                <h2>
+                    <i class="fa-solid fa-handshake"></i>
+                    Deixe-me Apresentar
+                </h2>
+
+                <div id="video-container">
+
+                    <iframe
+                        src="https://www.youtube.com/embed/mMMMUb3tcrI?si=K6q-t0FWa-7Ccubo"
+                        title="Vídeo de apresentação de Noel Norberto"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </article>
+
+
+<!-- ==================== COMPETÊNCIAS ==================== -->
+<article id="skills">
+
+    <h2>
+        <i class="fa-solid fa-brain"></i>
+        Competências
+    </h2>
+
+    <div class="skills-container">
+
+        <!-- HTML -->
+        <div class="skill-item">
+            <div class="skill-info">
+                <span class="skill-name">
+                    <i class="fa-brands fa-html5"></i>
+                    HTML5
+                </span>
+                <span class="skill-percent">90%</span>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-progress html"></div>
+            </div>
+        </div>
+
+
+        <!-- CSS -->
+        <div class="skill-item">
+            <div class="skill-info">
+                <span class="skill-name">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    CSS3
+                </span>
+                <span class="skill-percent">85%</span>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-progress css"></div>
+            </div>
+        </div>
+
+
+        <!-- JavaScript -->
+        <div class="skill-item">
+            <div class="skill-info">
+                <span class="skill-name">
+                    <i class="fa-brands fa-js"></i>
+                    JavaScript
+                </span>
+                <span class="skill-percent">70%</span>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-progress javascript"></div>
+            </div>
+        </div>
+
+
+        <!-- Python -->
+        <div class="skill-item">
+            <div class="skill-info">
+                <span class="skill-name">
+                    <i class="fa-brands fa-python"></i>
+                    Python
+                </span>
+                <span class="skill-percent">75%</span>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-progress python"></div>
+            </div>
+        </div>
+
+
+        <!-- Banco de Dados -->
+        <div class="skill-item">
+            <div class="skill-info">
+                <span class="skill-name">
+                    <i class="fa-solid fa-database"></i>
+                    Banco de Dados
+                </span>
+                <span class="skill-percent">70%</span>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-progress database"></div>
+            </div>
+        </div>
+
+
+        <!-- Inteligência Artificial -->
+        <div class="skill-item">
+            <div class="skill-info">
+                <span class="skill-name">
+                    <i class="fa-solid fa-robot"></i>
+                    Inteligência Artificial
+                </span>
+                <span class="skill-percent">75%</span>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-progress ia"></div>
+            </div>
+        </div>
+
+
+        <!-- Gestão Hoteleira -->
+        <div class="skill-item">
+            <div class="skill-info">
+                <span class="skill-name">
+                    <i class="fa-solid fa-hotel"></i>
+                    Gestão Hoteleira
+                </span>
+                <span class="skill-percent">95%</span>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-progress hotel"></div>
+            </div>
+        </div>
+
+
+        <!-- Gestão de Equipes -->
+        <div class="skill-item">
+            <div class="skill-info">
+                <span class="skill-name">
+                    <i class="fa-solid fa-users"></i>
+                    Gestão de Equipes
+                </span>
+                <span class="skill-percent">90%</span>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-progress equipe"></div>
+            </div>
+        </div>
+
+    </div>
+
+</article>
+
+
+<!-- ==================== FORMAÇÃO ==================== -->
+<article id="formacao">
+
+    <h2>
+        <i class="fa-solid fa-graduation-cap"></i>
+        Formação
+    </h2>
+
+    <div class="formacao-container">
+
+        <div class="formacao-item">
+
+            <span class="formacao-icone">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </span>
+
+            <div>
+                <h3>Ciência da Computação</h3>
+
+                <p>
+                    Formação superior com conhecimentos em tecnologia,
+                    programação, desenvolvimento de sistemas,
+                    banco de dados e computação.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="formacao-item">
+
+            <span class="formacao-icone">
+                <i class="fa-solid fa-laptop-code"></i>
+            </span>
+
+            <div>
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+
+                <p>
+                    Formação superior concluída em 2020, com foco em
+                    desenvolvimento de sistemas, análise de requisitos,
+                    programação e tecnologias digitais.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</article>
+
+
+<!-- ==================== PROJETOS ==================== -->
+<article id="projetos">
+
+    <h2>
+        <i class="fa-solid fa-trowel-bricks"></i>
+        Projetos
+    </h2>
+
+    <div class="projetos-container">
+
+        <div class="projeto">
+
+            <div class="projeto-icone">
+                <i class="fa-solid fa-code"></i>
+            </div>
+
+            <h3>Projetos em HTML e CSS</h3>
+
+            <p>
+                Desenvolvimento de páginas web responsivas utilizando
+                HTML5, CSS3, Media Queries, Flexbox e CSS Grid.
+            </p>
+
+            <div class="tecnologias">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Grid</span>
+                <span>Flexbox</span>
+            </div>
+
+        </div>
+
+
+        <div class="projeto">
+
+            <div class="projeto-icone">
+                <i class="fa-solid fa-robot"></i>
+            </div>
+
+            <h3>Projetos com Inteligência Artificial</h3>
+
+            <p>
+                Estudos e desenvolvimento de soluções utilizando
+                ferramentas e conceitos de Inteligência Artificial,
+                automação e tecnologias digitais.
+            </p>
+
+            <div class="tecnologias">
+                <span>IA</span>
+                <span>GPT</span>
+                <span>Automação</span>
+            </div>
+
+        </div>
+
+
+        <div class="projeto">
+
+            <div class="projeto-icone">
+                <i class="fa-brands fa-python"></i>
+            </div>
+
+            <h3>Projetos com Python</h3>
+
+            <p>
+                Desenvolvimento de rotinas e aplicações para automação,
+                processamento de informações e manipulação de arquivos.
+            </p>
+
+            <div class="tecnologias">
+                <span>Python</span>
+                <span>Automação</span>
+                <span>Dados</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</article>
+
+
+
+
+            <!-- FORMAÇÃO -->
+            <article id="formacao">
+
+                <h2>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Formação
+                </h2>
+
+                <div class="formacao-item">
+
+                    <h3>Ciência da Computação</h3>
+
+                    <p>
+                        Formação superior com conhecimentos em tecnologia,
+                        desenvolvimento de sistemas e computação.
+                    </p>
+
+                </div>
+
+                <div class="formacao-item">
+
+                    <h3>Análise e Desenvolvimento de Sistemas</h3>
+
+                    <p>
+                        Formação superior concluída em 2020.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- PROJETOS -->
+            <article id="projetos">
+
+                <h2>
+                    <i class="fa-solid fa-trowel-bricks"></i>
+                    Projetos
+                </h2>
+
+                <div class="projeto">
+
+                    <h3>Projetos em HTML e CSS</h3>
+
+                    <p>
+                        Desenvolvimento de páginas web responsivas utilizando
+                        HTML5, CSS3, Media Queries e CSS Grid.
+                    </p>
+
+                </div>
+
+                <div class="projeto">
+
+                    <h3>Projetos com Inteligência Artificial</h3>
+
+                    <p>
+                        Estudos e desenvolvimento de soluções utilizando
+                        ferramentas e conceitos de Inteligência Artificial.
+                    </p>
+
+                </div>
+
+                <div class="projeto">
+
+                    <h3>Projetos com Python</h3>
+
+                    <p>
+                        Desenvolvimento de rotinas e aplicações para
+                        automação e processamento de informações.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
     </main>
+
+
+    <!-- RODAPÉ -->
     <footer>
 
+        <p>
+            &copy; 2026 Noel Norberto.
+            Todos os direitos reservados.
+        </p>
+
+        <p>
+            Portfólio profissional desenvolvido para apresentação
+            de conhecimentos, experiências e projetos.
+        </p>
+
     </footer>
+
+
+    <!-- JAVASCRIPT -->
     <script src="scripts/script.js"></script>
+
 </body>
+
 </html>
