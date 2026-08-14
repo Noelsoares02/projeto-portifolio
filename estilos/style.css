@@ -559,7 +559,7 @@ article h2 i {
     color: var(--cor-texto)
 }
 #formacao-conteiner .intituicao {
-    
+    color: var(--cor-secundaria);
 }
 
 .formacao-item {
