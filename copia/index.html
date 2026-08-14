@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -26,16 +26,49 @@
     <!-- ==================== MENU PRINCIPAL ==================== -->
 
     <header>
-        <nav id="menu">
+
+        <nav id="menu" aria-label="Menu principal">
+
             <ul>
-                <li><a href="#">Home </a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Formação</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Tema</a></li>
-             </ul>
+
+                <li>
+                    <a href="#ficha" aria-label="Início">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#skills" aria-label="Competências">
+                        <i class="fa-solid fa-brain"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#formacao" aria-label="Formação">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#projetos" aria-label="Projetos">
+                        <i class="fa-solid fa-trowel-bricks"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <button
+                        type="button"
+                        id="btn-tema"
+                        aria-label="Alterar tema"
+                        title="Alterar tema">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+
+            </ul>
+
         </nav>
-      
+
     </header>
 
 
@@ -45,7 +78,43 @@
 
         <!-- ==================== APRESENTAÇÃO ==================== -->
 
-        
+        <section id="ficha">
+
+            <img
+                src="imagens/noel soares.jpg"
+                alt="Foto de Noel Norberto"
+                class="foto">
+
+            <h1>Noel Norberto</h1>
+
+            <p>
+                Profissional formado em
+                <strong>Análise e Desenvolvimento de Sistemas</strong>,
+                com conhecimentos em <strong>Inteligência Artificial,
+                desenvolvimento web e tecnologias digitais</strong>.
+            </p>
+
+            <p>
+                Possui <strong>30 anos de experiência no setor de
+                hotelaria</strong>, com sólida atuação como Coordenador
+                de Recepção e Reservas, destacando-se em atendimento ao
+                cliente, liderança e gestão de equipes, controle de
+                reservas e otimização de processos operacionais.
+            </p>
+
+            <p>
+                Experiência na integração entre
+                <strong>tecnologia e gestão hoteleira</strong>,
+                contribuindo para a melhoria dos processos, organização
+                das operações e qualidade no atendimento.
+            </p>
+
+            <p>
+                Perfil profissional marcado por responsabilidade,
+                capacidade de liderança, visão analítica e facilidade
+                de adaptação a novas tecnologias.
+            </p>
+
 
             <!-- REDES SOCIAIS -->
 
@@ -354,7 +423,233 @@
 
             <!-- ==================== FORMAÇÃO ==================== -->
 
-            
+            <article id="formacao">
+
+                <h2>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Formação
+                </h2>
+
+
+                <div class="formacao-container">
+
+
+                    <!-- ANÁLISE E DESENVOLVIMENTO DE SISTEMAS -->
+
+                    <div class="formacao-item">
+
+                        <span class="formacao-icone">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </span>
+
+                        <div class="curso">
+
+                            <p class="periodo">
+                                2016 - 2020
+                            </p>
+
+                            <h3 class="instituicao">
+                                Faculdade Anhanguera BH
+                            </h3>
+
+                            <p class="titulacao">
+                                Análise e Desenvolvimento de Sistemas
+                            </p>
+
+                            <p>
+                                Formação superior concluída em 2020,
+                                com conhecimentos em desenvolvimento
+                                de sistemas, análise de requisitos,
+                                programação e tecnologias digitais.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- INGLÊS -->
+
+                    <div class="formacao-item">
+
+                        <span class="formacao-icone">
+                            <i class="fa-solid fa-language"></i>
+                        </span>
+
+                        <div class="curso">
+
+                            <p class="periodo">
+                                2013 - 2016
+                            </p>
+
+                            <h3 class="instituicao">
+                                BHZ Idiomas
+                            </h3>
+
+                            <p class="titulacao">
+                                Inglês — do Básico ao Avançado
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MONTAGEM E MANUTENÇÃO -->
+
+                    <div class="formacao-item">
+
+                        <span class="formacao-icone">
+                            <i class="fa-solid fa-computer"></i>
+                        </span>
+
+                        <div class="curso">
+
+                            <p class="periodo">
+                                2009 - 2011
+                            </p>
+
+                            <h3 class="instituicao">
+                                Instituto de Tecnologia Cidade dos Meninos
+                            </h3>
+
+                            <p class="titulacao">
+                                Montagem e Manutenção de Computadores
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==================== PROJETOS ==================== -->
+
+            <article id="projetos">
+
+                <h2>
+                    <i class="fa-solid fa-trowel-bricks"></i>
+                    Projetos
+                </h2>
+
+
+                <div class="projetos-container">
+
+
+                    <!-- PROJETO HTML E CSS -->
+                     <div class="projeto">
+                        <img src="imagens/projeto-01-videos.jpg" alt="projeto " class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2022</p>
+                            <h3 class="titulo"> Projeto de videos</h3>
+                            <p>projeto cosntruido para treinar a inserçao de videos em nosso site</p>
+                            <detailist class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa ipsa voluptas facilis, quibusdam rerum quia necessitatibus explicabo autem laborum, sed ullam, debitis unde veniam dolorem sapiente aut corporis alias delectus.</p>
+                            </detailist>
+                        </div>
+                     </div>
+
+                     </div>
+
+                    <div class="projeto">
+
+                        <div class="projeto-icone">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <h3>
+                            Projetos em HTML e CSS
+                        </h3>
+
+                        <p>
+                            Desenvolvimento de páginas web responsivas
+                            utilizando HTML5, CSS3, Media Queries,
+                            Flexbox e CSS Grid.
+                        </p>
+
+                        <div class="tecnologias">
+
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Grid</span>
+                            <span>Flexbox</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROJETO INTELIGÊNCIA ARTIFICIAL -->
+
+                    <div class="projeto">
+
+                        <div class="projeto-icone">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+
+                        <h3>
+                            Projetos com Inteligência Artificial
+                        </h3>
+
+                        <p>
+                            Estudos e desenvolvimento de soluções
+                            utilizando ferramentas e conceitos de
+                            Inteligência Artificial, automação e
+                            tecnologias digitais.
+                        </p>
+
+                        <div class="tecnologias">
+
+                            <span>IA</span>
+                            <span>GPT</span>
+                            <span>Automação</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROJETO PYTHON -->
+
+                    <div class="projeto">
+
+                        <div class="projeto-icone">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+
+                        <h3>
+                            Projetos com Python
+                        </h3>
+
+                        <p>
+                            Desenvolvimento de rotinas e aplicações
+                            para automação, processamento de informações
+                            e manipulação de arquivos.
+                        </p>
+
+                        <div class="tecnologias">
+
+                            <span>Python</span>
+                            <span>Automação</span>
+                            <span>Dados</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+    </main>
+
 
     <!-- ==================== RODAPÉ ==================== -->
 
