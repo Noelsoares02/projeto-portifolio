@@ -283,29 +283,173 @@ article#video .video-container {
     color: var(--destaque-inverso);
     font-size: 1.1em;
 }
+/* =====================================================
+   PROJETOS
+   ===================================================== */
+
+#projeto-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 
 /* =====================================================
-   RESPONSIVIDADE
+   CARD DO PROJETO
+   ===================================================== */
+
+#projeto-container .projeto {
+    display: flex;
+    flex-direction: row-reverse;
+
+    gap: 15px;
+
+    padding: 10px;
+
+    background-color: var(--fundo-principal);
+
+    border-radius: 8px;
+
+    border-left: 5px solid var(--destaque-inverso);
+
+    transition:
+        border-color 0.5s ease,
+        border-left-width 0.5s ease,
+        transform 0.3s ease;
+}
+
+
+/* =====================================================
+   EFEITO HOVER
+   ===================================================== */
+
+#projeto-container .projeto:hover {
+    border-color: var(--destaque);
+
+    border-left-width: 15px;
+
+    cursor: pointer;
+
+    transform: translateX(5px);
+}
+
+
+/* =====================================================
+   IMAGEM DO PROJETO
+   ===================================================== */
+
+#projeto-container .foto {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+footer {
+    background-color: var(--destaque);
+    color: var(--texto-inverso);
+    text-align: center;
+    padding: 15px;
+
+}
+footer a {
+    color: var(--destaque-inverso);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+footer a:hover {
+    color: var(--destaque-inverso);
+}
+/* Zoom suave na imagem */
+
+#projeto-container .projeto:hover .foto {
+    transform: scale(1.02);
+}
+
+
+/* =====================================================
+   INFORMAÇÕES DO PROJETO
+   ===================================================== */
+
+#projeto-container .projeto-info {
+    flex: 1;
+}
+
+#projeto-container .periodo {
+    color: var(--destaque);
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+#projeto-container .titulo {
+    color: var(--texto);
+
+    margin-bottom: 10px;
+}
+
+#projeto-container .descricao {
+    margin-top: 10px;
+}
+
+
+/* =====================================================
+   DESKTOP
    ===================================================== */
 
 @media screen and (min-width: 762px) {
 
-    #skill-container {
-        grid-template-columns: 1fr 1fr;
-    }
-
-}
-@media screen and (min-width: 762px) {
-
-    #skill-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    #projeto-container {
         gap: 20px;
     }
 
-    .item {
-        width: 100%;
+    #projeto-container .projeto {
+        flex-direction: row-reverse;
+
+        justify-content: space-between;
+
+        align-items: flex-start;
     }
 
+    #projeto-container .projeto-info {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    #projeto-container .foto {
+        width: 20%;
+
+        max-width: 200px;
+
+        max-height: 200px;
+
+        aspect-ratio: 16 / 9;
+
+        object-fit: cover;
+    }
+}
+
+
+/* =====================================================
+   TELAS PEQUENAS
+   ===================================================== */
+
+@media screen and (max-width: 761px) {
+
+    #projeto-container .foto {
+        width: 100%;
+        max-height: 250px;
+    }
+
+    #projeto-container .projeto-info {
+        width: 100%;
+    }
 }
