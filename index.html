@@ -26,17 +26,40 @@
     <!-- ==================== MENU PRINCIPAL ==================== -->
 
     <header>
-        <nav id="menu">
-            <ul>
-                <li><a href="#"> <i class="fa-solid fa-house"></i> </a></li>
-                <li><a href="#"><i class="fa-solid fa-brain"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-graduation-cap"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-trowel-bricks"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-moon"></i></a></li>
-             </ul>
-        </nav>
-      
-    </header>
+    <nav id="menu">
+        <ul>
+            <li>
+                <a href="#video" class="link" aria-label="Início">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#skills" class="link" aria-label="Competências">
+                    <i class="fa-solid fa-brain"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#formacao" class="link" aria-label="Formação">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#projetos" class="link" aria-label="Projetos">
+                    <i class="fa-solid fa-trowel-bricks"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" id="botao-tema" aria-label="Alternar tema">
+                    <i class="fa-solid fa-moon"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
 
     <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
@@ -158,7 +181,7 @@
 
             <!-- ==================== COMPETÊNCIAS ==================== -->
 
-            <article class="skills">
+            <article id="skills">
 
                 <h2>
                     <i class="fa-solid fa-brain"></i>
@@ -498,20 +521,23 @@
 
 </article><!--Fim artigo#formaçao-->
 
-    <article id="projetos">
+    <!-- ==================== PROJETOS ==================== -->
+
+<article id="projetos">
 
     <h2>
         <i class="fa-solid fa-trowel-bricks"></i>
         Projetos
     </h2>
 
-    <div id="projeto-container"><!--Projeto 01-->
+    <div id="projeto-container">
 
+        <!-- PROJETO 01 -->
         <div class="projeto">
 
-            <img 
-                src="imagens/projeto-01-videos.jpg" 
-                alt="Projeto de vídeos" 
+            <img
+                src="imagens/projeto-01-videos.jpg"
+                alt="Projeto de vídeos"
                 class="foto"
             >
 
@@ -522,8 +548,8 @@
                 <h3 class="titulo">Projeto de Vídeos</h3>
 
                 <p>
-                    Projeto construído para treinar a inserção de vídeos
-                    em páginas web.
+                    Projeto desenvolvido para praticar a inserção
+                    e organização de vídeos em páginas web.
                 </p>
 
                 <details class="descricao">
@@ -543,16 +569,13 @@
 
         </div>
 
-    </div>
 
-</article>
-<div id="projeto-container"><!--Projeto 02-->
-
+        <!-- PROJETO 02 -->
         <div class="projeto">
 
-            <img 
-                src="imagens/projeto-02-cordel.jpg" 
-                alt="Projeto Cordel" 
+            <img
+                src="imagens/projeto-02-cordel.jpg"
+                alt="Projeto Cordel"
                 class="foto"
             >
 
@@ -563,7 +586,8 @@
                 <h3 class="titulo">Projeto Cordel</h3>
 
                 <p>
-                    Projeto construído para treinar efeitos paralax em imagens.
+                    Projeto desenvolvido para praticar efeitos
+                    de paralaxe utilizando imagens.
                 </p>
 
                 <details class="descricao">
@@ -572,9 +596,9 @@
 
                     <p>
                         Projeto desenvolvido durante os estudos de
-                        HTML5 e CSS3, com o objetivo de praticar a
-                        inserção, organização e apresentação de vídeos
-                        em páginas web.
+                        HTML5 e CSS3, utilizando imagens de fundo,
+                        efeito paralaxe e diferentes técnicas de
+                        apresentação de conteúdo.
                     </p>
 
                 </details>
@@ -583,58 +607,13 @@
 
         </div>
 
-    </div>
 
-</article>
-<div id="projeto-container"><!--Projeto 04-->
-
+        <!-- PROJETO 03 -->
         <div class="projeto">
 
-            <img 
-                src="imagens/projeto-05-login.jpg" 
-                alt="Projeto de vídeos" 
-                class="foto"
-            >
-
-            <div class="projeto-info">
-
-                <p class="periodo">2022</p>
-
-                <h3 class="titulo">Projeto login</h3>
-
-                <p>
-                    Projeto construído para treinar a inserção de vídeos
-                    em páginas web.
-                </p>
-
-                <details class="descricao">
-
-                    <summary>Saiba mais...</summary>
-
-                    <p>
-                        Projeto desenvolvido durante os estudos de
-                        HTML5 e CSS3, com o objetivo de praticar a
-                        inserção, organização e apresentação de vídeos
-                        em páginas web.
-                    </p>
-
-                </details>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</article>
-
-<div id="projeto-container"><!--Projeto 03-->
-
-        <div class="projeto">
-
-            <img 
-                src="imagens/projeto-03-android.jpg" 
-                alt="Projeto Android" 
+            <img
+                src="imagens/projeto-03-android.jpg"
+                alt="Projeto Android"
                 class="foto"
             >
 
@@ -645,7 +624,8 @@
                 <h3 class="titulo">Projeto Android</h3>
 
                 <p>
-                    Projwto construido para treinar conteúdo e imagens dinamicas.
+                    Projeto desenvolvido para praticar conteúdo
+                    responsivo e imagens dinâmicas.
                 </p>
 
                 <details class="descricao">
@@ -654,9 +634,122 @@
 
                     <p>
                         Projeto desenvolvido durante os estudos de
-                        HTML5 e CSS3, com o objetivo de praticar a
-                        inserção, organização e apresentação de vídeos
-                        em páginas web.
+                        HTML5 e CSS3, com foco em estrutura semântica,
+                        imagens responsivas, conteúdo dinâmico e
+                        adaptação para diferentes dispositivos.
+                    </p>
+
+                </details>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROJETO 04 -->
+        <div class="projeto">
+
+            <img
+                src="imagens/projeto-04-links.jpg"
+                alt="Projeto Links"
+                class="foto"
+            >
+
+            <div class="projeto-info">
+
+                <p class="periodo">2024</p>
+
+                <h3 class="titulo">Projeto Links</h3>
+
+                <p>
+                    Projeto desenvolvido para praticar a criação
+                    e organização de links em páginas web.
+                </p>
+
+                <details class="descricao">
+
+                    <summary>Saiba mais...</summary>
+
+                    <p>
+                        Projeto desenvolvido durante os estudos de
+                        HTML5 e CSS3, com foco na criação de links,
+                        navegação entre páginas e organização de
+                        conteúdo utilizando HTML e CSS.
+                    </p>
+
+                </details>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROJETO 05 -->
+        <div class="projeto">
+
+            <img
+                src="imagens/projeto-05-login.jpg"
+                alt="Projeto Login"
+                class="foto"
+            >
+
+            <div class="projeto-info">
+
+                <p class="periodo">2022</p>
+
+                <h3 class="titulo">Projeto Login</h3>
+
+                <p>
+                    Projeto desenvolvido para praticar a criação
+                    de formulários e telas de login.
+                </p>
+
+                <details class="descricao">
+
+                    <summary>Saiba mais...</summary>
+
+                    <p>
+                        Projeto desenvolvido durante os estudos de
+                        HTML5 e CSS3, com foco na criação de formulários,
+                        campos de entrada, organização visual e
+                        responsividade.
+                    </p>
+
+                </details>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROJETO 06 -->
+        <div class="projeto">
+
+            <img
+                src="imagens/projeto-06-album.jpg"
+                alt="Projeto Álbum"
+                class="foto"
+            >
+
+            <div class="projeto-info">
+
+                <p class="periodo">2025</p>
+
+                <h3 class="titulo">Projeto Álbum</h3>
+
+                <p>
+                    Projeto desenvolvido para praticar a utilização
+                    de fotos e imagens em páginas web.
+                </p>
+
+                <details class="descricao">
+
+                    <summary>Saiba mais...</summary>
+
+                    <p>
+                        Projeto desenvolvido durante os estudos de
+                        HTML5 e CSS3, com foco na inserção, organização
+                        e apresentação de fotos e imagens em páginas web.
                     </p>
 
                 </details>
@@ -667,11 +760,10 @@
 
     </div>
 
-</article>
+</article><!-- Fim article#projetos -->
 
 
-<!-- Fim article#projetos -->
-    <!-- ==================== RODAPÉ ==================== -->
+     <!-- ==================== RODAPÉ ==================== -->
 
     <footer>
 
